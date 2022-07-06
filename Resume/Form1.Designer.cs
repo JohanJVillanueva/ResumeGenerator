@@ -62,6 +62,7 @@
             this.lblSkill3 = new System.Windows.Forms.Label();
             this.lblSkill2 = new System.Windows.Forms.Label();
             this.lblSkill1 = new System.Windows.Forms.Label();
+            this.lblDisclaimer = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -429,12 +430,26 @@
             this.lblSkill1.TabIndex = 28;
             this.lblSkill1.Text = "Skill: ";
             // 
+            // lblDisclaimer
+            // 
+            this.lblDisclaimer.AutoSize = true;
+            this.lblDisclaimer.Font = new System.Drawing.Font("Poetsen One", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDisclaimer.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblDisclaimer.Location = new System.Drawing.Point(227, 576);
+            this.lblDisclaimer.Name = "lblDisclaimer";
+            this.lblDisclaimer.Size = new System.Drawing.Size(264, 42);
+            this.lblDisclaimer.TabIndex = 33;
+            this.lblDisclaimer.Text = "The info shown in the progam is not altered \r\nin anyway and it all came from the " +
+    "JSON File, \r\nClick Submit to Convert it to PDF!\r\n";
+            this.lblDisclaimer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
-            this.ClientSize = new System.Drawing.Size(764, 603);
+            this.ClientSize = new System.Drawing.Size(764, 631);
+            this.Controls.Add(this.lblDisclaimer);
             this.Controls.Add(this.lblSkill5);
             this.Controls.Add(this.lblSkill4);
             this.Controls.Add(this.lblSkill3);
@@ -511,5 +526,6 @@
         private Label lblSkill3;
         private Label lblSkill2;
         private Label lblSkill1;
+        private Label lblDisclaimer;
     }
 }
