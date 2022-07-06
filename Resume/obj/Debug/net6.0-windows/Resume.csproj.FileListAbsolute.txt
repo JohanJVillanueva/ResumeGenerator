@@ -19,3 +19,7 @@ E:\Programming\Resume\Resume\Resume\obj\Debug\net6.0-windows\Resume.pdb
 E:\Programming\Resume\Resume\Resume\obj\Debug\net6.0-windows\Resume.genruntimeconfig.cache
 E:\Programming\Resume\Resume\Resume\obj\Debug\net6.0-windows\ref\Resume.dll
 E:\Programming\Resume\Resume\Resume\obj\Debug\net6.0-windows\Resume.Properties.Resources.resources
+E:\Programming\Resume\Resume\Resume\bin\Debug\net6.0-windows\PdfSharp.Charting.dll
+E:\Programming\Resume\Resume\Resume\bin\Debug\net6.0-windows\PdfSharp.dll
+E:\Programming\Resume\Resume\Resume\bin\Debug\net6.0-windows\de\PdfSharp.Charting.resources.dll
+E:\Programming\Resume\Resume\Resume\bin\Debug\net6.0-windows\de\PdfSharp.resources.dll

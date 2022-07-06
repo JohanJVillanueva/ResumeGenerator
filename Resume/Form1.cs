@@ -1,4 +1,10 @@
 using System.Text.Json;
+using PdfSharp;
+using PdfSharp.Pdf;
+using PdfSharp.Drawing;
+using System.Diagnostics;
+using System.Text;
+
 namespace Resume
 {
     public partial class Form1 : Form
@@ -8,6 +14,7 @@ namespace Resume
         {
 
             InitializeComponent();
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             string filename = "resumeinfo.json";
             string jsonstring = File.ReadAllText(filename);
             Resume resume = JsonSerializer.Deserialize<Resume>(jsonstring)!;
@@ -90,6 +97,32 @@ namespace Resume
             lblSkill4.Text = resume.skill4;
             lblSkill5.Text = resume.skill5;
 
+
+        }
+
+        private void btnGenerate_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.InitialDirectory = @"E:\Programming\Resume";
+                sfd.FileName = "JohanVillanueva.pdf";
+                sfd.Filter = "PDF|*.pdf";
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    
+                    PdfDocument pdf = new PdfDocument();
+                    pdf.Info.Title = "Resume";
+                    PdfPage page = pdf.AddPage();
+
+                    XGraphics graph = XGraphics.FromPdfPage(page);
+                    XFont font = new XFont("Rockwell", 18, XFontStyle.Regular);
+
+                    graph.DrawString("Testing", font, XBrushes.Black, new XRect(0, 0, page.Width.Point, page.Height.Point), XStringFormats.Center);
+
+                    pdf.Save(sfd.FileName);
+                }
+
+            }
 
         }
     }

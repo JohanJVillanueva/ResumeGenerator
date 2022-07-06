@@ -63,6 +63,7 @@
             this.lblSkill2 = new System.Windows.Forms.Label();
             this.lblSkill1 = new System.Windows.Forms.Label();
             this.lblDisclaimer = new System.Windows.Forms.Label();
+            this.btnGenerate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -443,12 +444,23 @@
     "JSON File, \r\nClick Submit to Convert it to PDF!\r\n";
             this.lblDisclaimer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // btnGenerate
+            // 
+            this.btnGenerate.Location = new System.Drawing.Point(506, 573);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(209, 46);
+            this.btnGenerate.TabIndex = 34;
+            this.btnGenerate.Text = "Generate PDF";
+            this.btnGenerate.UseVisualStyleBackColor = true;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(764, 631);
+            this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.lblDisclaimer);
             this.Controls.Add(this.lblSkill5);
             this.Controls.Add(this.lblSkill4);
@@ -527,5 +539,6 @@
         private Label lblSkill2;
         private Label lblSkill1;
         private Label lblDisclaimer;
+        private Button btnGenerate;
     }
 }
