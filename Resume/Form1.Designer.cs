@@ -45,6 +45,11 @@
             this.lblCity = new System.Windows.Forms.Label();
             this.lblPostalCode = new System.Windows.Forms.Label();
             this.lblAddres = new System.Windows.Forms.Label();
+            this.lblInformation = new System.Windows.Forms.Label();
+            this.lblCollege = new System.Windows.Forms.Label();
+            this.lblCollegeGraduated = new System.Windows.Forms.Label();
+            this.lblHighSchool = new System.Windows.Forms.Label();
+            this.lblHighSchoolGraduated = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -223,12 +228,74 @@
             this.lblAddres.TabIndex = 12;
             this.lblAddres.Text = "Address:";
             // 
+            // lblInformation
+            // 
+            this.lblInformation.AutoSize = true;
+            this.lblInformation.Font = new System.Drawing.Font("Poetsen One", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblInformation.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblInformation.Location = new System.Drawing.Point(227, 38);
+            this.lblInformation.Name = "lblInformation";
+            this.lblInformation.Size = new System.Drawing.Size(315, 42);
+            this.lblInformation.TabIndex = 16;
+            this.lblInformation.Text = "This program reads the json file supplied in \r\nthe root folder of the application" +
+    ", shows it to the\r\n end-user and converts it into pdf format as a resume!";
+            this.lblInformation.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblCollege
+            // 
+            this.lblCollege.AutoSize = true;
+            this.lblCollege.BackColor = System.Drawing.Color.White;
+            this.lblCollege.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCollege.Location = new System.Drawing.Point(62, 457);
+            this.lblCollege.Name = "lblCollege";
+            this.lblCollege.Size = new System.Drawing.Size(55, 14);
+            this.lblCollege.TabIndex = 17;
+            this.lblCollege.Text = "College:";
+            // 
+            // lblCollegeGraduated
+            // 
+            this.lblCollegeGraduated.AutoSize = true;
+            this.lblCollegeGraduated.BackColor = System.Drawing.Color.White;
+            this.lblCollegeGraduated.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCollegeGraduated.Location = new System.Drawing.Point(62, 471);
+            this.lblCollegeGraduated.Name = "lblCollegeGraduated";
+            this.lblCollegeGraduated.Size = new System.Drawing.Size(120, 14);
+            this.lblCollegeGraduated.TabIndex = 18;
+            this.lblCollegeGraduated.Text = "Year of Graduation: ";
+            // 
+            // lblHighSchool
+            // 
+            this.lblHighSchool.AutoSize = true;
+            this.lblHighSchool.BackColor = System.Drawing.Color.White;
+            this.lblHighSchool.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblHighSchool.Location = new System.Drawing.Point(62, 503);
+            this.lblHighSchool.Name = "lblHighSchool";
+            this.lblHighSchool.Size = new System.Drawing.Size(77, 14);
+            this.lblHighSchool.TabIndex = 19;
+            this.lblHighSchool.Text = "High School:";
+            // 
+            // lblHighSchoolGraduated
+            // 
+            this.lblHighSchoolGraduated.AutoSize = true;
+            this.lblHighSchoolGraduated.BackColor = System.Drawing.Color.White;
+            this.lblHighSchoolGraduated.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblHighSchoolGraduated.Location = new System.Drawing.Point(62, 517);
+            this.lblHighSchoolGraduated.Name = "lblHighSchoolGraduated";
+            this.lblHighSchoolGraduated.Size = new System.Drawing.Size(110, 14);
+            this.lblHighSchoolGraduated.TabIndex = 20;
+            this.lblHighSchoolGraduated.Text = "YearOfGraduation";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(764, 603);
+            this.Controls.Add(this.lblHighSchoolGraduated);
+            this.Controls.Add(this.lblHighSchool);
+            this.Controls.Add(this.lblCollegeGraduated);
+            this.Controls.Add(this.lblCollege);
+            this.Controls.Add(this.lblInformation);
             this.Controls.Add(this.lblRegion);
             this.Controls.Add(this.lblCity);
             this.Controls.Add(this.lblPostalCode);
@@ -271,5 +338,10 @@
         private Label lblCity;
         private Label lblPostalCode;
         private Label lblAddres;
+        private Label lblInformation;
+        private Label lblCollege;
+        private Label lblCollegeGraduated;
+        private Label lblHighSchool;
+        private Label lblHighSchoolGraduated;
     }
 }

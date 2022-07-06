@@ -68,9 +68,11 @@ namespace Resume
             lblCity.Text = "City: " + resume.city;
             lblRegion.Text = "Region: " + resume.region;
 
-
-
-
+            //Education
+            lblCollege.Text = "College: " + resume.College;
+            lblCollegeGraduated.Text = "Year of Graduation: " + resume.CollegeGraduated;
+            lblHighSchool.Text = "High School: " + resume.HighSchool;
+            lblHighSchoolGraduated.Text = "Year of Graduation: " + resume.HighSchoolGraduated;
 
         }
     }
