@@ -158,9 +158,17 @@ namespace Resume
                     PdfPage page = pdf.AddPage();
 
                     XGraphics graph = XGraphics.FromPdfPage(page);
-                    XFont font = new XFont("Rockwell", 18, XFontStyle.Regular);
+                    XFont bigfont = new XFont("Rockwell", 18, XFontStyle.Regular);
+                    XFont smallfont = new XFont("Times New Roman", 9, XFontStyle.Regular);
 
-                    graph.DrawString("Testing", font, XBrushes.Black, new XRect(0, 0, page.Width.Point, page.Height.Point), XStringFormats.Center);
+                    int marginleft = 30;
+
+                    graph.DrawString("RESUME", bigfont, XBrushes.Black, new XRect(0, 20, page.Width.Point, page.Height.Point), XStringFormats.TopCenter);
+
+                    graph.DrawString(FirstName, smallfont, XBrushes.Black, new XRect(marginleft, 50, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+
+                    graph.DrawString(LastName, smallfont, XBrushes.Black, new XRect(marginleft, 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     pdf.Save(sfd.FileName);
                 }
