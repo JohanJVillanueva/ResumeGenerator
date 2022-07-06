@@ -28,20 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.lblPdf = new System.Windows.Forms.Label();
+            this.lblBasicInfo = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblEducation = new System.Windows.Forms.Label();
+            this.lblAward = new System.Windows.Forms.Label();
+            this.lblSkills = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblPdf
+            // 
+            this.lblPdf.AutoSize = true;
+            this.lblPdf.Font = new System.Drawing.Font("Poetsen One", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPdf.ForeColor = System.Drawing.Color.Maroon;
+            this.lblPdf.Location = new System.Drawing.Point(215, 9);
+            this.lblPdf.Name = "lblPdf";
+            this.lblPdf.Size = new System.Drawing.Size(347, 29);
+            this.lblPdf.TabIndex = 0;
+            this.lblPdf.Text = "PDF Generator from JSON File";
+            // 
+            // lblBasicInfo
+            // 
+            this.lblBasicInfo.AutoSize = true;
+            this.lblBasicInfo.Font = new System.Drawing.Font("Poetsen One", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblBasicInfo.ForeColor = System.Drawing.Color.Maroon;
+            this.lblBasicInfo.Location = new System.Drawing.Point(51, 88);
+            this.lblBasicInfo.Name = "lblBasicInfo";
+            this.lblBasicInfo.Size = new System.Drawing.Size(124, 29);
+            this.lblBasicInfo.TabIndex = 1;
+            this.lblBasicInfo.Text = "Basic Info";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Poetsen One", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAddress.Location = new System.Drawing.Point(51, 251);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(105, 29);
+            this.lblAddress.TabIndex = 2;
+            this.lblAddress.Text = "Address";
+            // 
+            // lblEducation
+            // 
+            this.lblEducation.AutoSize = true;
+            this.lblEducation.Font = new System.Drawing.Font("Poetsen One", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEducation.ForeColor = System.Drawing.Color.Maroon;
+            this.lblEducation.Location = new System.Drawing.Point(51, 410);
+            this.lblEducation.Name = "lblEducation";
+            this.lblEducation.Size = new System.Drawing.Size(126, 29);
+            this.lblEducation.TabIndex = 3;
+            this.lblEducation.Text = "Education";
+            // 
+            // lblAward
+            // 
+            this.lblAward.AutoSize = true;
+            this.lblAward.Font = new System.Drawing.Font("Poetsen One", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAward.ForeColor = System.Drawing.Color.Maroon;
+            this.lblAward.Location = new System.Drawing.Point(371, 88);
+            this.lblAward.Name = "lblAward";
+            this.lblAward.Size = new System.Drawing.Size(100, 29);
+            this.lblAward.TabIndex = 4;
+            this.lblAward.Text = "Awards";
+            // 
+            // lblSkills
+            // 
+            this.lblSkills.AutoSize = true;
+            this.lblSkills.Font = new System.Drawing.Font("Poetsen One", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSkills.ForeColor = System.Drawing.Color.Maroon;
+            this.lblSkills.Location = new System.Drawing.Point(371, 333);
+            this.lblSkills.Name = "lblSkills";
+            this.lblSkills.Size = new System.Drawing.Size(71, 29);
+            this.lblSkills.TabIndex = 5;
+            this.lblSkills.Text = "Skills";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(10, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(742, 544);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(588, 567);
+            this.BackColor = System.Drawing.Color.Wheat;
+            this.ClientSize = new System.Drawing.Size(764, 603);
+            this.Controls.Add(this.lblSkills);
+            this.Controls.Add(this.lblAward);
+            this.Controls.Add(this.lblEducation);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.lblBasicInfo);
+            this.Controls.Add(this.lblPdf);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "PDF Generator";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private Label lblPdf;
+        private Label lblBasicInfo;
+        private Label lblAddress;
+        private Label lblEducation;
+        private Label lblAward;
+        private Label lblSkills;
+        private PictureBox pictureBox1;
     }
 }

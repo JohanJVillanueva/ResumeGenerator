@@ -12,10 +12,9 @@ namespace Resume
             string jsonstring = File.ReadAllText(filename);
             Resume resume = JsonSerializer.Deserialize<Resume>(jsonstring)!;
 
-            MessageBox.Show(resume.lastname);
+            //MessageBox.Show(resume.phone);
 
-            //MessageBox.Show($"TemperatureCelsius: {weatherForecast.TemperatureCelsius}");
-            //MessageBox.Show($"Summary: {weatherForecast.Summary}");
+
 
 
         }
