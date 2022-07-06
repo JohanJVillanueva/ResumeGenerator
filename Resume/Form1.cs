@@ -14,6 +14,13 @@ namespace Resume
 
             //MessageBox.Show(resume.phone);
 
+            //Label Variable
+            string Firstname = resume.firstname;
+            string Lastname = resume.lastname;
+
+            lblFirstName.Text = "First Name: " + resume.firstname;
+            lblLastName.Text = "Last Name: " + resume.lastname;
+
 
 
 

@@ -18,3 +18,4 @@ E:\Programming\Resume\Resume\Resume\obj\Debug\net6.0-windows\refint\Resume.dll
 E:\Programming\Resume\Resume\Resume\obj\Debug\net6.0-windows\Resume.pdb
 E:\Programming\Resume\Resume\Resume\obj\Debug\net6.0-windows\Resume.genruntimeconfig.cache
 E:\Programming\Resume\Resume\Resume\obj\Debug\net6.0-windows\ref\Resume.dll
+E:\Programming\Resume\Resume\Resume\obj\Debug\net6.0-windows\Resume.Properties.Resources.resources
