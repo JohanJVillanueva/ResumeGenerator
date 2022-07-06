@@ -11,32 +11,33 @@
       "city": "Cavite",
       "region": "IV-CALABARZON"
     },
-  "education": [
-    {
-      "College": "Polytechnic University of the Philippines - Bachelor of Science in Computer Engineering",
-      "CollegeGraduated": "Graduating June 2025",
-      "HighSchool": "Cavite National High School / Senior High School - Science, Technology, Engineering and Mathematics Track",
-      "HighSchoolGraduated": "Graduated June 2021"
-    }
-  ],
-  "awards": [
-    {
-      "award1": "Certificate of Recognition Arduino and C Basics Course – 2020",
-      "award2": "Certificate of Recognition Python Crash Course – 2020",
-      "award3": "C2 First Overall Best Oral Presenter - March 2019",
-      "award4": "2nd Placer Robotics RSTFC -  April 2018",
-      "award5": "2nd Placer Green Technology NSYC – March 2018",
-      "award6": "2nd Place for Caviteñan Mobile Application",
-      "award7": "Google Developers Guild Student Developer - 2017"
-    }
-  ],
-  "skills": [
-    {
-      "skill1": "Technical Proficiency in Adobe Suite and Microsoft Office Applications",
-      "skill2": "In-depth knowledge in Markup Languages such as HTML, CSS and jQuery",
-      "skill3": "In-depth knowledge in Programming Languages such as C# and Python",
-      "skill4": "Able to work under pressure",
-      "skill5": "Critical Thinker"
-    }
-  ]
+    "education": [
+      {
+        "College": "Polytechnic University of the Philippines - Bachelor of Science in Computer Engineering",
+        "CollegeGraduated": "Graduating June 2025",
+        "HighSchool": "Cavite National High School / Senior High School - Science, Technology, Engineering and Mathematics Track",
+        "HighSchoolGraduated": "Graduated June 2021"
+      }
+    ],
+    "awards": [
+      {
+        "award1": "Certificate of Recognition Arduino and C Basics Course – 2020",
+        "award2": "Certificate of Recognition Python Crash Course – 2020",
+        "award3": "C2 First Overall Best Oral Presenter - March 2019",
+        "award4": "2nd Placer Robotics RSTFC -  April 2018",
+        "award5": "2nd Placer Green Technology NSYC – March 2018",
+        "award6": "2nd Place for Caviteñan Mobile Application",
+        "award7": "Google Developers Guild Student Developer - 2017"
+      }
+    ],
+    "skills": [
+      {
+        "skill1": "Technical Proficiency in Adobe Suite and Microsoft Office Applications",
+        "skill2": "In-depth knowledge in Markup Languages such as HTML, CSS and jQuery",
+        "skill3": "In-depth knowledge in Programming Languages such as C# and Python",
+        "skill4": "Able to work under pressure",
+        "skill5": "Critical Thinker"
+      }
+    ]
+  }
 }
