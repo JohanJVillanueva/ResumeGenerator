@@ -50,6 +50,18 @@
             this.lblCollegeGraduated = new System.Windows.Forms.Label();
             this.lblHighSchool = new System.Windows.Forms.Label();
             this.lblHighSchoolGraduated = new System.Windows.Forms.Label();
+            this.lblAward1 = new System.Windows.Forms.Label();
+            this.lblAward2 = new System.Windows.Forms.Label();
+            this.lblAward4 = new System.Windows.Forms.Label();
+            this.lblAward3 = new System.Windows.Forms.Label();
+            this.lblAward7 = new System.Windows.Forms.Label();
+            this.lblAward6 = new System.Windows.Forms.Label();
+            this.lblAward5 = new System.Windows.Forms.Label();
+            this.lblSkill5 = new System.Windows.Forms.Label();
+            this.lblSkill4 = new System.Windows.Forms.Label();
+            this.lblSkill3 = new System.Windows.Forms.Label();
+            this.lblSkill2 = new System.Windows.Forms.Label();
+            this.lblSkill1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -285,12 +297,156 @@
             this.lblHighSchoolGraduated.TabIndex = 20;
             this.lblHighSchoolGraduated.Text = "YearOfGraduation";
             // 
+            // lblAward1
+            // 
+            this.lblAward1.AutoSize = true;
+            this.lblAward1.BackColor = System.Drawing.Color.White;
+            this.lblAward1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAward1.Location = new System.Drawing.Point(385, 126);
+            this.lblAward1.Name = "lblAward1";
+            this.lblAward1.Size = new System.Drawing.Size(47, 14);
+            this.lblAward1.TabIndex = 21;
+            this.lblAward1.Text = "Award:";
+            // 
+            // lblAward2
+            // 
+            this.lblAward2.AutoSize = true;
+            this.lblAward2.BackColor = System.Drawing.Color.White;
+            this.lblAward2.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAward2.Location = new System.Drawing.Point(385, 140);
+            this.lblAward2.Name = "lblAward2";
+            this.lblAward2.Size = new System.Drawing.Size(47, 14);
+            this.lblAward2.TabIndex = 22;
+            this.lblAward2.Text = "Award:";
+            // 
+            // lblAward4
+            // 
+            this.lblAward4.AutoSize = true;
+            this.lblAward4.BackColor = System.Drawing.Color.White;
+            this.lblAward4.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAward4.Location = new System.Drawing.Point(385, 168);
+            this.lblAward4.Name = "lblAward4";
+            this.lblAward4.Size = new System.Drawing.Size(47, 14);
+            this.lblAward4.TabIndex = 24;
+            this.lblAward4.Text = "Award:";
+            // 
+            // lblAward3
+            // 
+            this.lblAward3.AutoSize = true;
+            this.lblAward3.BackColor = System.Drawing.Color.White;
+            this.lblAward3.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAward3.Location = new System.Drawing.Point(385, 154);
+            this.lblAward3.Name = "lblAward3";
+            this.lblAward3.Size = new System.Drawing.Size(47, 14);
+            this.lblAward3.TabIndex = 23;
+            this.lblAward3.Text = "Award:";
+            // 
+            // lblAward7
+            // 
+            this.lblAward7.AutoSize = true;
+            this.lblAward7.BackColor = System.Drawing.Color.White;
+            this.lblAward7.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAward7.Location = new System.Drawing.Point(385, 210);
+            this.lblAward7.Name = "lblAward7";
+            this.lblAward7.Size = new System.Drawing.Size(47, 14);
+            this.lblAward7.TabIndex = 27;
+            this.lblAward7.Text = "Award:";
+            // 
+            // lblAward6
+            // 
+            this.lblAward6.AutoSize = true;
+            this.lblAward6.BackColor = System.Drawing.Color.White;
+            this.lblAward6.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAward6.Location = new System.Drawing.Point(385, 196);
+            this.lblAward6.Name = "lblAward6";
+            this.lblAward6.Size = new System.Drawing.Size(47, 14);
+            this.lblAward6.TabIndex = 26;
+            this.lblAward6.Text = "Award:";
+            // 
+            // lblAward5
+            // 
+            this.lblAward5.AutoSize = true;
+            this.lblAward5.BackColor = System.Drawing.Color.White;
+            this.lblAward5.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAward5.Location = new System.Drawing.Point(385, 182);
+            this.lblAward5.Name = "lblAward5";
+            this.lblAward5.Size = new System.Drawing.Size(47, 14);
+            this.lblAward5.TabIndex = 25;
+            this.lblAward5.Text = "Award:";
+            // 
+            // lblSkill5
+            // 
+            this.lblSkill5.AutoSize = true;
+            this.lblSkill5.BackColor = System.Drawing.Color.White;
+            this.lblSkill5.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSkill5.Location = new System.Drawing.Point(385, 431);
+            this.lblSkill5.Name = "lblSkill5";
+            this.lblSkill5.Size = new System.Drawing.Size(36, 14);
+            this.lblSkill5.TabIndex = 32;
+            this.lblSkill5.Text = "Skill: ";
+            // 
+            // lblSkill4
+            // 
+            this.lblSkill4.AutoSize = true;
+            this.lblSkill4.BackColor = System.Drawing.Color.White;
+            this.lblSkill4.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSkill4.Location = new System.Drawing.Point(385, 417);
+            this.lblSkill4.Name = "lblSkill4";
+            this.lblSkill4.Size = new System.Drawing.Size(36, 14);
+            this.lblSkill4.TabIndex = 31;
+            this.lblSkill4.Text = "Skill: ";
+            // 
+            // lblSkill3
+            // 
+            this.lblSkill3.AutoSize = true;
+            this.lblSkill3.BackColor = System.Drawing.Color.White;
+            this.lblSkill3.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSkill3.Location = new System.Drawing.Point(385, 403);
+            this.lblSkill3.Name = "lblSkill3";
+            this.lblSkill3.Size = new System.Drawing.Size(36, 14);
+            this.lblSkill3.TabIndex = 30;
+            this.lblSkill3.Text = "Skill: ";
+            // 
+            // lblSkill2
+            // 
+            this.lblSkill2.AutoSize = true;
+            this.lblSkill2.BackColor = System.Drawing.Color.White;
+            this.lblSkill2.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSkill2.Location = new System.Drawing.Point(385, 389);
+            this.lblSkill2.Name = "lblSkill2";
+            this.lblSkill2.Size = new System.Drawing.Size(36, 14);
+            this.lblSkill2.TabIndex = 29;
+            this.lblSkill2.Text = "Skill: ";
+            // 
+            // lblSkill1
+            // 
+            this.lblSkill1.AutoSize = true;
+            this.lblSkill1.BackColor = System.Drawing.Color.White;
+            this.lblSkill1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSkill1.Location = new System.Drawing.Point(385, 375);
+            this.lblSkill1.Name = "lblSkill1";
+            this.lblSkill1.Size = new System.Drawing.Size(36, 14);
+            this.lblSkill1.TabIndex = 28;
+            this.lblSkill1.Text = "Skill: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(764, 603);
+            this.Controls.Add(this.lblSkill5);
+            this.Controls.Add(this.lblSkill4);
+            this.Controls.Add(this.lblSkill3);
+            this.Controls.Add(this.lblSkill2);
+            this.Controls.Add(this.lblSkill1);
+            this.Controls.Add(this.lblAward7);
+            this.Controls.Add(this.lblAward6);
+            this.Controls.Add(this.lblAward5);
+            this.Controls.Add(this.lblAward4);
+            this.Controls.Add(this.lblAward3);
+            this.Controls.Add(this.lblAward2);
+            this.Controls.Add(this.lblAward1);
             this.Controls.Add(this.lblHighSchoolGraduated);
             this.Controls.Add(this.lblHighSchool);
             this.Controls.Add(this.lblCollegeGraduated);
@@ -343,5 +499,17 @@
         private Label lblCollegeGraduated;
         private Label lblHighSchool;
         private Label lblHighSchoolGraduated;
+        private Label lblAward1;
+        private Label lblAward2;
+        private Label lblAward4;
+        private Label lblAward3;
+        private Label lblAward7;
+        private Label lblAward6;
+        private Label lblAward5;
+        private Label lblSkill5;
+        private Label lblSkill4;
+        private Label lblSkill3;
+        private Label lblSkill2;
+        private Label lblSkill1;
     }
 }

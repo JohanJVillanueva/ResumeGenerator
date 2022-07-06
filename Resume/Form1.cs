@@ -74,6 +74,23 @@ namespace Resume
             lblHighSchool.Text = "High School: " + resume.HighSchool;
             lblHighSchoolGraduated.Text = "Year of Graduation: " + resume.HighSchoolGraduated;
 
+            //Awards
+            lblAward1.Text = resume.award1;
+            lblAward2.Text = resume.award2;
+            lblAward3.Text = resume.award3;
+            lblAward4.Text = resume.award4;
+            lblAward5.Text = resume.award5;
+            lblAward6.Text = resume.award6;
+            lblAward7.Text = resume.award7;
+
+            //Skills
+            lblSkill1.Text = resume.skill1;
+            lblSkill2.Text = resume.skill2;
+            lblSkill3.Text = resume.skill3;
+            lblSkill4.Text = resume.skill4;
+            lblSkill5.Text = resume.skill5;
+
+
         }
     }
     public class Resume
