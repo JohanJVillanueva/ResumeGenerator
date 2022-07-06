@@ -148,7 +148,7 @@ namespace Resume
             using (SaveFileDialog sfd = new SaveFileDialog())
             {
                 sfd.InitialDirectory = @"E:\Programming\Resume";
-                sfd.FileName = LastName + FirstName + ".pdf";
+                sfd.FileName = LastName + "_" + FirstName + ".pdf";
                 sfd.Filter = "PDF|*.pdf";
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
