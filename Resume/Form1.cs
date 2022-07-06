@@ -12,14 +12,62 @@ namespace Resume
             string jsonstring = File.ReadAllText(filename);
             Resume resume = JsonSerializer.Deserialize<Resume>(jsonstring)!;
 
-            //MessageBox.Show(resume.phone);
 
-            //Label Variable
+
+            //Grabbing Data from Json, converting into a string variable
+            //Basic Info
             string Firstname = resume.firstname;
             string Lastname = resume.lastname;
+            string Email = resume.email;
+            string Phone = resume.phone;
+            string Websire = resume.website;
+            
+            //Adress
+            string Address = resume.address;
+            string PostalCode = resume.postalCode;
+            string City = resume.city;
+            string Region = resume.region;
 
+
+            //Education
+            string Collge = resume.College;
+            string CollegeGraduated = resume.CollegeGraduated;
+            string HighSchool = resume.HighSchool;
+            string HighSchoolGraduated = resume.HighSchoolGraduated;
+
+            //Awards
+            string Award1 = resume.award1;
+            string Award2 = resume.award2;
+            string Award3 = resume.award3;
+            string Award4 = resume.award4;
+            string Award5 = resume.award5;
+            string Award6 = resume.award6;
+            string Award7 = resume.award7;
+            
+
+            //Skills
+            string Skill1 = resume.skill1;
+            string Skill2 = resume.skill2;
+            string Skill3 = resume.skill3;
+            string Skill4 = resume.skill4;
+            string Skill5 = resume.skill5;
+
+
+            //Setting Text on Labels
+
+            //Basic Info
             lblFirstName.Text = "First Name: " + resume.firstname;
             lblLastName.Text = "Last Name: " + resume.lastname;
+            lblEmail.Text = "Email: " + resume.email;
+            lblPhone.Text = "Phone: " + resume.phone;
+            lblWebsite.Text = "Website: " + resume.website;
+
+            //Address
+            lblAddres.Text = "Address: " + resume.address;
+            lblPostalCode.Text = "Postal Code: " + resume.postalCode;
+            lblCity.Text = "City: " + resume.city;
+            lblRegion.Text = "Region: " + resume.region;
+
 
 
 
@@ -40,6 +88,7 @@ namespace Resume
         public string College { get; set; }
 
         public string CollegeGraduated { get; set; }
+        public string HighSchool { get; set; }
         public string HighSchoolGraduated { get; set; }
         public string award1 { get; set; }
         public string award2 { get; set; }

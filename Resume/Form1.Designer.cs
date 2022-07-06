@@ -41,6 +41,10 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblWebsite = new System.Windows.Forms.Label();
+            this.lblRegion = new System.Windows.Forms.Label();
+            this.lblCity = new System.Windows.Forms.Label();
+            this.lblPostalCode = new System.Windows.Forms.Label();
+            this.lblAddres = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,9 +131,9 @@
             this.lblFirstName.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFirstName.Location = new System.Drawing.Point(60, 126);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(46, 14);
+            this.lblFirstName.Size = new System.Drawing.Size(74, 14);
             this.lblFirstName.TabIndex = 7;
-            this.lblFirstName.Text = "Name: ";
+            this.lblFirstName.Text = "First Name: ";
             // 
             // lblLastName
             // 
@@ -138,9 +142,9 @@
             this.lblLastName.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLastName.Location = new System.Drawing.Point(60, 140);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(46, 14);
+            this.lblLastName.Size = new System.Drawing.Size(68, 14);
             this.lblLastName.TabIndex = 8;
-            this.lblLastName.Text = "Name: ";
+            this.lblLastName.Text = "Last Name:";
             // 
             // lblEmail
             // 
@@ -149,9 +153,9 @@
             this.lblEmail.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.Location = new System.Drawing.Point(60, 154);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(46, 14);
+            this.lblEmail.Size = new System.Drawing.Size(41, 14);
             this.lblEmail.TabIndex = 9;
-            this.lblEmail.Text = "Name: ";
+            this.lblEmail.Text = "Email:";
             // 
             // lblPhone
             // 
@@ -162,7 +166,7 @@
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(46, 14);
             this.lblPhone.TabIndex = 10;
-            this.lblPhone.Text = "Name: ";
+            this.lblPhone.Text = "Phone:";
             // 
             // lblWebsite
             // 
@@ -171,9 +175,53 @@
             this.lblWebsite.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblWebsite.Location = new System.Drawing.Point(60, 182);
             this.lblWebsite.Name = "lblWebsite";
-            this.lblWebsite.Size = new System.Drawing.Size(46, 14);
+            this.lblWebsite.Size = new System.Drawing.Size(58, 14);
             this.lblWebsite.TabIndex = 11;
-            this.lblWebsite.Text = "Name: ";
+            this.lblWebsite.Text = "Website:";
+            // 
+            // lblRegion
+            // 
+            this.lblRegion.AutoSize = true;
+            this.lblRegion.BackColor = System.Drawing.Color.White;
+            this.lblRegion.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRegion.Location = new System.Drawing.Point(60, 332);
+            this.lblRegion.Name = "lblRegion";
+            this.lblRegion.Size = new System.Drawing.Size(50, 14);
+            this.lblRegion.TabIndex = 15;
+            this.lblRegion.Text = "Region:";
+            // 
+            // lblCity
+            // 
+            this.lblCity.AutoSize = true;
+            this.lblCity.BackColor = System.Drawing.Color.White;
+            this.lblCity.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCity.Location = new System.Drawing.Point(60, 318);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(34, 14);
+            this.lblCity.TabIndex = 14;
+            this.lblCity.Text = "City:";
+            // 
+            // lblPostalCode
+            // 
+            this.lblPostalCode.AutoSize = true;
+            this.lblPostalCode.BackColor = System.Drawing.Color.White;
+            this.lblPostalCode.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPostalCode.Location = new System.Drawing.Point(60, 304);
+            this.lblPostalCode.Name = "lblPostalCode";
+            this.lblPostalCode.Size = new System.Drawing.Size(78, 14);
+            this.lblPostalCode.TabIndex = 13;
+            this.lblPostalCode.Text = "Postal Code:";
+            // 
+            // lblAddres
+            // 
+            this.lblAddres.AutoSize = true;
+            this.lblAddres.BackColor = System.Drawing.Color.White;
+            this.lblAddres.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddres.Location = new System.Drawing.Point(60, 290);
+            this.lblAddres.Name = "lblAddres";
+            this.lblAddres.Size = new System.Drawing.Size(59, 14);
+            this.lblAddres.TabIndex = 12;
+            this.lblAddres.Text = "Address:";
             // 
             // Form1
             // 
@@ -181,6 +229,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(764, 603);
+            this.Controls.Add(this.lblRegion);
+            this.Controls.Add(this.lblCity);
+            this.Controls.Add(this.lblPostalCode);
+            this.Controls.Add(this.lblAddres);
             this.Controls.Add(this.lblWebsite);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.lblEmail);
@@ -215,5 +267,9 @@
         private Label lblEmail;
         private Label lblPhone;
         private Label lblWebsite;
+        private Label lblRegion;
+        private Label lblCity;
+        private Label lblPostalCode;
+        private Label lblAddres;
     }
 }
