@@ -1,0 +1,39 @@
+{
+  "basics": {
+    "firstname": "Johan",
+    "lastname": "Villanueva",
+    "email": "johanvillanueva3@gmail.com",
+    "phone": "0905-196-8827",
+    "website": "cavitetech.wordpress.com",
+    "location": {
+      "address": "962 Don P. Bautista St, Dalahican",
+      "postalCode": "4100",
+      "city": "Cavite",
+      "region": "IV-CALABARZON"
+    },
+  "education": [
+    {
+      "College": "Your school name",
+      "CollegeGraduated": "Your area of study or degree earned",
+      "HighSchool": "Your start date, in YYYY-MM-DD format",
+      "HighSchoolGraduated": "Your completion date, in YYYY-MM-DD format",
+    }
+  ],
+  "awards": [
+    {
+      "title": "Your award title",
+      "date": "Your date, in YYYY-MM-DD format you received the award",
+      "awarder": "Your award given by",
+      "summary": "A one-sentence to one-paragraph overview of this award"
+    }
+  ],
+  "skills": [
+    {
+      "name": "A category of job skills (e.g. 'Programming Languages')",
+      "level": "",
+      "keywords": [
+        "Keywords under this category (e.g. 'Java', 'C++', etc)"
+      ]
+    }
+  ]
+}
