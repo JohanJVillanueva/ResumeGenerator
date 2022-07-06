@@ -100,12 +100,55 @@ namespace Resume
 
         }
 
+        public class Resume
+        {
+            public string firstname { get; set; }
+            public string lastname { get; set; }
+            public string email { get; set; }
+            public string phone { get; set; }
+            public string website { get; set; }
+            public string address { get; set; }
+            public string postalCode { get; set; }
+            public string city { get; set; }
+            public string region { get; set; }
+            public string College { get; set; }
+
+            public string CollegeGraduated { get; set; }
+            public string HighSchool { get; set; }
+            public string HighSchoolGraduated { get; set; }
+            public string award1 { get; set; }
+            public string award2 { get; set; }
+            public string award3 { get; set; }
+            public string award4 { get; set; }
+            public string award5 { get; set; }
+            public string award6 { get; set; }
+            public string award7 { get; set; }
+            public string skill1 { get; set; }
+            public string skill2 { get; set; }
+            public string skill3 { get; set; }
+
+            public string skill4 { get; set; }
+            public string skill5 { get; set; }
+
+
+        }
+
         private void btnGenerate_Click(object sender, EventArgs e)
         {
+            string FirstName = lblFirstName.Text;
+            string LastName = lblLastName.Text;
+
+
+
+            FirstName = FirstName.Replace("First Name: ", "");
+            FirstName = FirstName.ToUpper();
+            LastName = LastName.Replace("Last Name: ", "");
+            LastName = LastName.ToUpper();
+
             using (SaveFileDialog sfd = new SaveFileDialog())
             {
                 sfd.InitialDirectory = @"E:\Programming\Resume";
-                sfd.FileName = "JohanVillanueva.pdf";
+                sfd.FileName = LastName + FirstName + ".pdf";
                 sfd.Filter = "PDF|*.pdf";
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
@@ -126,36 +169,5 @@ namespace Resume
 
         }
     }
-    public class Resume
-    {
-        public string firstname { get; set; }
-        public string lastname { get; set; }
-        public string email { get; set; }
-        public string phone { get; set; }
-        public string website { get; set; }
-        public string address { get; set; }
-        public string postalCode { get; set; }
-        public string city { get; set; }
-        public string region { get; set; }
-        public string College { get; set; }
-
-        public string CollegeGraduated { get; set; }
-        public string HighSchool { get; set; }
-        public string HighSchoolGraduated { get; set; }
-        public string award1 { get; set; }
-        public string award2 { get; set; }
-        public string award3 { get; set; }
-        public string award4 { get; set; }
-        public string award5 { get; set; }
-        public string award6 { get; set; }
-        public string award7 { get; set; }
-        public string skill1 { get; set; }
-        public string skill2 { get; set; }
-        public string skill3 { get; set; }
-
-        public string skill4 { get; set; }
-        public string skill5 { get; set; }
-
-
-    }
+    
 }
