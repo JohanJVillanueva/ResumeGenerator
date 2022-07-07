@@ -206,10 +206,13 @@ namespace Resume
                     pdf.Info.Title = "Resume";
                     PdfPage page = pdf.AddPage();
 
+                    
                     XGraphics graph = XGraphics.FromPdfPage(page);
+
+                    //call fonts
                     XFont bigfont = new XFont("Gobold", 18, XFontStyle.Regular);
                     XFont smallfont = new XFont("Rockwell", 12, XFontStyle.Regular);
-
+                    XFont titlefont = new XFont("Cocogoose", 35, XFontStyle.Regular);
                     
 
                     XPen pen = new XPen(XColors.White, 20);
@@ -237,8 +240,11 @@ namespace Resume
                     //grab 1x1 photo not included ng json file
                     string jpeg = @"E:\Programming\Resume\Resume\1x1.jpg";
                     XImage image = XImage.FromFile(jpeg);
-                    graph.DrawImage(image, marginleft, 30, 100, 100);
+                    graph.DrawImage(image, marginleft, 50, 150, 150);
 
+                    
+                    //First Name and Last Name Big
+ 
                     //Basic Info
                     graph.DrawString("Basic Info:", bigfont,  XBrushes.White, new XRect(marginleft, initialleft + 20, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
@@ -265,9 +271,12 @@ namespace Resume
 
                     //right side of PDF
 
-                    int marginmiddle = 210;
+                    int marginmiddle = 220;
                     int initialmiddle = 200;
 
+                    //BIG First name and last name
+                    graph.DrawString(Firstname, titlefont, XBrushes.Black, new XRect(marginmiddle, initialmiddle-110, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(LastName, titlefont, XBrushes.Black, new XRect(marginmiddle, initialmiddle-70, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     //Education
                     graph.DrawString("Education:", bigfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
