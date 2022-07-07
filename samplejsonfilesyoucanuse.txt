@@ -1,0 +1,60 @@
+Johan 
+
+{
+  "firstname": "Johan",
+  "lastname": "Villanueva",
+  "email": "johanvillanueva3@gmail.com",
+  "phone": "0905-196-8827",
+  "website": "cavitetech.wordpress.com",
+  "address": "962 Bautista St, Dalahican",
+  "postalCode": "4100",
+  "city": "Cavite City",
+  "region": "IV-CALABARZON",
+  "College": "PUP - BS in Computer Engineering",
+  "CollegeGraduated": "Graduating June 2025",
+  "HighSchool": "CNHS Senior HS - STEM Track",
+  "HighSchoolGraduated": "Graduated June 2021",
+  "award1": "CoR Arduino and C Basics Course 2020",
+  "award2": "CoR Python Crash Course  2020",
+  "award3": "C2 First Overall Best Oral Presenter - March 2019",
+  "award4": "2nd Placer Robotics RSTFC   April 2018",
+  "award5": "2nd Placer Green Technology NSYC  March 2018",
+  "award6": "2nd Place for Cavitenan Mobile Application",
+  "award7": "Google Developers Guild Student Developer  2017",
+  "skill1": "Technical Proficiency in Adobe and Microsoft Programs",
+  "skill2": "In-depth knowledge in HTML, CSS and jQuery",
+  "skill3": "In-depth knowledge in C# and Python",
+  "skill4": "Able to work under pressure",
+  "skill5": "Critical Thinker"
+}
+
+
+Kenneth
+
+{
+  "firstname": "Kenneth",
+  "lastname": "Agarin",
+  "email": "kennethagarin@gmail.com",
+  "phone": "0905-231-4929",
+  "website": "kenneth.wordpress.com",
+  "address": "Mariano St. San Roque",
+  "postalCode": "4100",
+  "city": "Bacoor City",
+  "region": "IV-CALABARZON",
+  "College": "PUP - BS in Computer Engineering",
+  "CollegeGraduated": "Graduating June 2025",
+  "HighSchool": "Mariano Senior HS - STEM Track",
+  "HighSchoolGraduated": "Graduated June 2021",
+  "award1": "CoR Raspberry Pi Basics Course 2020",
+  "award2": "CoR C++ Crash Course  2020",
+  "award3": "C3 First Overall Best Oral Presenter - March 2019",
+  "award4": "1st Place Robotics RSTFC   April 2018",
+  "award5": "1st Place Green Technology NSYC  March 2018",
+  "award6": "1st Place for Cavitenan Mobile Application",
+  "award7": "Google Developers Guild Student Developer  2017",
+  "skill1": "Technical Proficiency in Adobe and Microsoft Programs",
+  "skill2": "In-depth knowledge in HTML, CSS and jQuery",
+  "skill3": "In-depth knowledge in C# and Python",
+  "skill4": "Able to work under pressure",
+  "skill5": "Critical Thinker"
+}
