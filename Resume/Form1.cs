@@ -229,7 +229,7 @@ namespace Resume
 
                     //Makes a variable to define the margin for the left side and the starting y coordinate
                     int marginleft = 25;
-                    int initialleft = 120;
+                    int initialleft = 200;
 
                     //leftside of pdf
                     //Always add +15 when there is a new info
@@ -266,7 +266,7 @@ namespace Resume
                     //right side of PDF
 
                     int marginmiddle = 210;
-                    int initialmiddle = 120;
+                    int initialmiddle = 200;
 
 
                     //Education
@@ -280,13 +280,41 @@ namespace Resume
 
                     graph.DrawString(HighSchoolGraduated, smallfont, XBrushes.Black, new XRect(marginmiddle+25, initialmiddle + 75, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
-                    //
+                    //Awards
 
+                    initialmiddle = initialmiddle + 100;
 
+                    graph.DrawString("Awards:", bigfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
+                    graph.DrawString(Award1, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle +30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
+                    graph.DrawString(Award2, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle +45, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
+                    graph.DrawString(Award3, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
+                    graph.DrawString(Award4, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 75, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Award5, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 90, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Award6, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 105, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Award7, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 120, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    //Skills
+
+                    initialmiddle = initialmiddle + 150;
+
+                    graph.DrawString("Skills:", bigfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Skill1, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Skill2, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 45, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Skill3, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Skill4, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 75, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Skill5, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 90, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
 
                     pdf.Save(sfd.FileName);
