@@ -208,9 +208,9 @@ namespace Resume
 
                     XGraphics graph = XGraphics.FromPdfPage(page);
                     XFont bigfont = new XFont("Gobold", 18, XFontStyle.Regular);
-                    XFont smallfont = new XFont("Rockwell", 9, XFontStyle.Regular);
+                    XFont smallfont = new XFont("Rockwell", 12, XFontStyle.Regular);
 
-                    int marginleft = 30;
+                    
 
                     XPen pen = new XPen(XColors.White, 20);
 
@@ -224,18 +224,40 @@ namespace Resume
 
 
 
-                    
+                    //Draw Resume in the top center of PDF
                     graph.DrawString("RESUME", bigfont, XBrushes.White, new XRect(0, 20, page.Width.Point, page.Height.Point), XStringFormats.TopCenter);
 
+                    //Makes a variable to define the margin for the left side and the starting y coordinate
+                    int marginleft = 25;
+                    int initialleft = 100;
 
                     //leftside of pdf
-                    graph.DrawString(FirstName, smallfont, XBrushes.Black, new XRect(marginleft, 50, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    //Always add +15 when there is a new info
 
-                    graph.DrawString(LastName, smallfont, XBrushes.Black, new XRect(marginleft, 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    //Basic Info
+                    graph.DrawString("Basic Info:", bigfont,  XBrushes.White, new XRect(marginleft, initialleft + 20, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
-                    graph.DrawString(Email, smallfont, XBrushes.Black, new XRect(marginleft, 100, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString("First Name: " + Firstname, smallfont, XBrushes.Black, new XRect(marginleft, initialleft+50, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
-                    graph.DrawString(Website, smallfont, XBrushes.Black, new XRect(marginleft, 100, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString("Last Name: " + Lastname, smallfont, XBrushes.Black, new XRect(marginleft, initialleft+65, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Email, smallfont, XBrushes.Black, new XRect(marginleft, initialleft+80, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Website, smallfont, XBrushes.Black, new XRect(marginleft, initialleft+95, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Phone, smallfont, XBrushes.Black, new XRect(marginleft, initialleft+110, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    //Address
+                    graph.DrawString("Address:", bigfont, XBrushes.White, new XRect(marginleft, initialleft+135, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Address, smallfont, XBrushes.Black, new XRect(marginleft, initialleft + 160, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(City, smallfont, XBrushes.Black, new XRect(marginleft, initialleft + 190, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Region, smallfont, XBrushes.Black, new XRect(marginleft, initialleft + 205, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(PostalCode, smallfont, XBrushes.Black, new XRect(marginleft, initialleft + 175, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
 
                     //right side of PDF
 
