@@ -305,7 +305,7 @@ namespace Resume
                     initialmiddle = initialmiddle + 100;
 
                     //Line Separator
-                    graph.DrawRectangle(linerright, marginmiddle, initialmiddle - 10, 350, 1);
+                    graph.DrawRectangle(linerright, marginmiddle, initialmiddle - 5, 350, 1);
 
                     graph.DrawString("Awards:", bigfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
@@ -326,6 +326,8 @@ namespace Resume
                     //Skills
 
                     initialmiddle = initialmiddle + 150;
+                    //Line Separator
+                    graph.DrawRectangle(linerright, marginmiddle, initialmiddle - 5, 350, 1);
 
                     graph.DrawString("Skills:", bigfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
