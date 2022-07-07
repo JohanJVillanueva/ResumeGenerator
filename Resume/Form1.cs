@@ -268,9 +268,19 @@ namespace Resume
                     int marginmiddle = 210;
                     int initialmiddle = 120;
 
-                    graph.DrawString("Education:", bigfont, XBrushes.Navy, new XRect(marginmiddle, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    //Education
+                    graph.DrawString("Education:", bigfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     graph.DrawString(College, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(CollegeGraduated, smallfont, XBrushes.Black, new XRect(marginmiddle+25, initialmiddle + 45, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(HighSchool, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(HighSchoolGraduated, smallfont, XBrushes.Black, new XRect(marginmiddle+25, initialmiddle + 75, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    //
 
 
 
