@@ -216,8 +216,8 @@ namespace Resume
                     
                     //Draw pens
                     XPen pen = new XPen(XColors.White, 20);
-                    XPen linerleft = new XPen(XColors.DarkGray, 1);
-                    XPen linerright = new XPen(XColors.Black, 1) ;
+                    XPen linerleft = new XPen(XColors.Black, 1);;
+                    XPen linerright = new XPen(XColors.DarkGray, 1) ;
 
 
 
@@ -264,7 +264,7 @@ namespace Resume
 
 
                     //Line Separator
-                    graph.DrawRectangle(linerleft, marginleft, initialleft + 125, 150, 1);
+                    graph.DrawRectangle(linerleft, marginleft, initialleft + 130, 150, 1);
 
                     //Address
                     graph.DrawString("Address:", bigfont, XBrushes.White, new XRect(marginleft, initialleft+135, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
@@ -284,7 +284,10 @@ namespace Resume
 
                     //BIG First name and last name
                     graph.DrawString(Firstname, titlefont, XBrushes.Black, new XRect(marginmiddle, initialmiddle-110, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-                    graph.DrawString(LastName, titlefont, XBrushes.Black, new XRect(marginmiddle, initialmiddle-70, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Lastname, titlefont, XBrushes.Black, new XRect(marginmiddle, initialmiddle-70, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    //Line Separator
+                    graph.DrawRectangle(linerright, marginmiddle, initialmiddle - 10, 350, 1);
 
                     //Education
                     graph.DrawString("Education:", bigfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
@@ -300,6 +303,9 @@ namespace Resume
                     //Awards
 
                     initialmiddle = initialmiddle + 100;
+
+                    //Line Separator
+                    graph.DrawRectangle(linerright, marginmiddle, initialmiddle - 10, 350, 1);
 
                     graph.DrawString("Awards:", bigfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
