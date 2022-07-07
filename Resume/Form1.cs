@@ -229,7 +229,7 @@ namespace Resume
 
                     //Makes a variable to define the margin for the left side and the starting y coordinate
                     int marginleft = 25;
-                    int initialleft = 100;
+                    int initialleft = 120;
 
                     //leftside of pdf
                     //Always add +15 when there is a new info
@@ -258,6 +258,9 @@ namespace Resume
 
                     graph.DrawString(PostalCode, smallfont, XBrushes.Black, new XRect(marginleft, initialleft + 175, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
+                    string jpeg = @"E:\Programming\Resume\Resume\1x1.jpg";
+                    XImage image = XImage.FromFile(jpeg);
+                    graph.DrawImage(image, marginleft, 30, 100, 100);
 
                     //right side of PDF
 
