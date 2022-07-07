@@ -214,11 +214,15 @@ namespace Resume
                     XFont smallfont = new XFont("Rockwell", 12, XFontStyle.Regular);
                     XFont titlefont = new XFont("Cocogoose", 35, XFontStyle.Regular);
                     
-
+                    //Draw pens
                     XPen pen = new XPen(XColors.White, 20);
+                    XPen linerleft = new XPen(XColors.DarkGray, 1);
+                    XPen linerright = new XPen(XColors.Black, 1) ;
+
+
 
                     //bg color
-                    
+
                     graph.DrawRoundedRectangle(XBrushes.LightSkyBlue, 0, 0, page.Width.Point, page.Height.Point, 30, 20);
                     graph.DrawRoundedRectangle(XBrushes.WhiteSmoke, 200, 50, page.Width.Point, page.Height.Point, 100, 100);
 
@@ -257,6 +261,10 @@ namespace Resume
                     graph.DrawString(Website, smallfont, XBrushes.Black, new XRect(marginleft, initialleft+95, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     graph.DrawString(Phone, smallfont, XBrushes.Black, new XRect(marginleft, initialleft+110, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+
+                    //Line Separator
+                    graph.DrawRectangle(linerleft, marginleft, initialleft + 125, 150, 1);
 
                     //Address
                     graph.DrawString("Address:", bigfont, XBrushes.White, new XRect(marginleft, initialleft+135, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
