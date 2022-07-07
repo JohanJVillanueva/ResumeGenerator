@@ -27,7 +27,7 @@ namespace Resume
             string Lastname = resume.lastname;
             string Email = resume.email;
             string Phone = resume.phone;
-            string Websire = resume.website;
+            string Website = resume.website;
             
             //Adress
             string Address = resume.address;
@@ -149,7 +149,7 @@ namespace Resume
             string Lastname = resume.lastname;
             string Email = resume.email;
             string Phone = resume.phone;
-            string Websire = resume.website;
+            string Website = resume.website;
 
             //Adress
             string Address = resume.address;
@@ -207,26 +207,37 @@ namespace Resume
                     PdfPage page = pdf.AddPage();
 
                     XGraphics graph = XGraphics.FromPdfPage(page);
-                    XFont bigfont = new XFont("Rockwell", 18, XFontStyle.Regular);
-                    XFont smallfont = new XFont("Times New Roman", 9, XFontStyle.Regular);
+                    XFont bigfont = new XFont("Gobold", 18, XFontStyle.Regular);
+                    XFont smallfont = new XFont("Rockwell", 9, XFontStyle.Regular);
 
                     int marginleft = 30;
 
+                    XPen pen = new XPen(XColors.White, 20);
 
                     //bg color
-                    graph.DrawRectangle(XBrushes.LightGray, 0, 0, page.Width.Point, page.Height.Point);
-                    graph.DrawRectangle(XBrushes.LightSkyBlue, 0, 0, 200, page.Height.Point);
+                    
+                    graph.DrawRoundedRectangle(XBrushes.LightSkyBlue, 0, 0, page.Width.Point, page.Height.Point, 30, 20);
+                    graph.DrawRoundedRectangle(XBrushes.WhiteSmoke, 200, 50, page.Width.Point, page.Height.Point, 100, 100);
 
-                    //bg
+                    //bg border
+                    graph.DrawRectangle(pen, 0, 0, page.Width.Point, page.Height.Point);
 
-                    graph.DrawString("RESUME", bigfont, XBrushes.Black, new XRect(0, 20, page.Width.Point, page.Height.Point), XStringFormats.TopCenter);
 
+
+                    
+                    graph.DrawString("RESUME", bigfont, XBrushes.White, new XRect(0, 20, page.Width.Point, page.Height.Point), XStringFormats.TopCenter);
+
+
+                    //leftside of pdf
                     graph.DrawString(FirstName, smallfont, XBrushes.Black, new XRect(marginleft, 50, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-
 
                     graph.DrawString(LastName, smallfont, XBrushes.Black, new XRect(marginleft, 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     graph.DrawString(Email, smallfont, XBrushes.Black, new XRect(marginleft, 100, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Website, smallfont, XBrushes.Black, new XRect(marginleft, 100, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    //right side of PDF
 
 
 
