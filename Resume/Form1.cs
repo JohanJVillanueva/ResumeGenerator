@@ -37,7 +37,7 @@ namespace Resume
 
 
             //Education
-            string Collge = resume.College;
+            string College = resume.College;
             string CollegeGraduated = resume.CollegeGraduated;
             string HighSchool = resume.HighSchool;
             string HighSchoolGraduated = resume.HighSchoolGraduated;
@@ -159,7 +159,7 @@ namespace Resume
 
 
             //Education
-            string Collge = resume.College;
+            string College = resume.College;
             string CollegeGraduated = resume.CollegeGraduated;
             string HighSchool = resume.HighSchool;
             string HighSchoolGraduated = resume.HighSchoolGraduated;
@@ -225,7 +225,7 @@ namespace Resume
 
 
                     //Draw Resume in the top center of PDF
-                    graph.DrawString("RESUME", bigfont, XBrushes.White, new XRect(0, 20, page.Width.Point, page.Height.Point), XStringFormats.TopCenter);
+                    graph.DrawString("RESUME", bigfont, XBrushes.White, new XRect(0, 20, page.Width.Point-20, page.Height.Point-50), XStringFormats.TopRight);
 
                     //Makes a variable to define the margin for the left side and the starting y coordinate
                     int marginleft = 25;
@@ -233,6 +233,11 @@ namespace Resume
 
                     //leftside of pdf
                     //Always add +15 when there is a new info
+
+                    //grab 1x1 photo not included ng json file
+                    string jpeg = @"E:\Programming\Resume\Resume\1x1.jpg";
+                    XImage image = XImage.FromFile(jpeg);
+                    graph.DrawImage(image, marginleft, 30, 100, 100);
 
                     //Basic Info
                     graph.DrawString("Basic Info:", bigfont,  XBrushes.White, new XRect(marginleft, initialleft + 20, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
@@ -258,13 +263,14 @@ namespace Resume
 
                     graph.DrawString(PostalCode, smallfont, XBrushes.Black, new XRect(marginleft, initialleft + 175, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
-                    string jpeg = @"E:\Programming\Resume\Resume\1x1.jpg";
-                    XImage image = XImage.FromFile(jpeg);
-                    graph.DrawImage(image, marginleft, 30, 100, 100);
-
                     //right side of PDF
 
+                    int marginmiddle = 210;
+                    int initialmiddle = 120;
 
+                    graph.DrawString("Education:", bigfont, XBrushes.Navy, new XRect(marginmiddle, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(College, smallfont, XBrushes.Black, new XRect(marginmiddle, initialmiddle + 30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
 
 
