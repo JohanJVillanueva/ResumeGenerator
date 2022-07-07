@@ -135,11 +135,60 @@ namespace Resume
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
+            // Get Info from JSON File
+
+            string filename = "resumeinfo.json";
+            string jsonstring = File.ReadAllText(filename);
+            Resume resume = JsonSerializer.Deserialize<Resume>(jsonstring)!;
+
+
+
+            //Grabbing Data from Json, converting into a string variable
+            //Basic Info
+            string Firstname = resume.firstname;
+            string Lastname = resume.lastname;
+            string Email = resume.email;
+            string Phone = resume.phone;
+            string Websire = resume.website;
+
+            //Adress
+            string Address = resume.address;
+            string PostalCode = resume.postalCode;
+            string City = resume.city;
+            string Region = resume.region;
+
+
+            //Education
+            string Collge = resume.College;
+            string CollegeGraduated = resume.CollegeGraduated;
+            string HighSchool = resume.HighSchool;
+            string HighSchoolGraduated = resume.HighSchoolGraduated;
+
+            //Awards
+            string Award1 = resume.award1;
+            string Award2 = resume.award2;
+            string Award3 = resume.award3;
+            string Award4 = resume.award4;
+            string Award5 = resume.award5;
+            string Award6 = resume.award6;
+            string Award7 = resume.award7;
+
+
+            //Skills
+            string Skill1 = resume.skill1;
+            string Skill2 = resume.skill2;
+            string Skill3 = resume.skill3;
+            string Skill4 = resume.skill4;
+            string Skill5 = resume.skill5;
+
+
+
+
+
+            //End of Get Info from JSON
+
             string FirstName = lblFirstName.Text;
             string LastName = lblLastName.Text;
-
-
-
             FirstName = FirstName.Replace("First Name: ", "");
             FirstName = FirstName.ToUpper();
             LastName = LastName.Replace("Last Name: ", "");
@@ -163,12 +212,30 @@ namespace Resume
 
                     int marginleft = 30;
 
+
+                    //bg color
+                    graph.DrawRectangle(XBrushes.LightGray, 0, 0, page.Width.Point, page.Height.Point);
+                    graph.DrawRectangle(XBrushes.LightSkyBlue, 0, 0, 200, page.Height.Point);
+
+                    //bg
+
                     graph.DrawString("RESUME", bigfont, XBrushes.Black, new XRect(0, 20, page.Width.Point, page.Height.Point), XStringFormats.TopCenter);
 
                     graph.DrawString(FirstName, smallfont, XBrushes.Black, new XRect(marginleft, 50, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
 
                     graph.DrawString(LastName, smallfont, XBrushes.Black, new XRect(marginleft, 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Email, smallfont, XBrushes.Black, new XRect(marginleft, 100, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+
+
+
+
+
+
+
+
 
                     pdf.Save(sfd.FileName);
                 }
